@@ -1,0 +1,165 @@
+/*
+ *hayre
+ *style.css
+ */
+
+
+/* everything to do with the body and text. */
+body {
+	background-color: #efefef;
+	color:#555555;
+	font-family: Arial, Helvetica, sans-serif;	
+	width:1000px;
+	margin:100px auto;
+}
+
+h1 {
+	color: #000000;
+	background-color: inherit;
+	margin: 0;
+}
+
+h2, h3, h4 {
+	margin-left: 3px;
+}
+
+
+/* Menu bar. */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	color: inherit;
+	box-shadow: 0 0 5px 1px #888888;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+	background-color: inherit;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active nav li a:hover {
+	color: inherit;
+	background-color: #ECECEC;
+}
+
+nav li a:hover {
+	color: inherit;
+    background-color: #111;
+}
+
+.active {
+	color: inherit;
+    background-color: #ECECEC;
+}
+
+
+
+/* coloring the links */
+a { 
+	background-color: inherit;
+	color: inherit; 
+} 
+
+/* everything in the main div */
+#main {
+	color:inherit;
+	background-color:#FFFFFF;
+	box-shadow: 0 0 5px 1px #888888;
+	clear: right;
+	padding-bottom: 10px;
+	
+}
+
+
+/* table properties. */
+.pure-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	border: 1px solid #cbcbcb;
+}
+.pure-table thead {
+	background-color: #e0e0e0;
+	color: #000;
+	text-align: left;
+	vertical-align: bottom;
+}
+.pure-table td:first-child, .pure-table th:first-child {
+	border-left-width: 0;
+}
+.pure-table th, .pure-table td {
+	padding: 0.5em 1em;
+}
+.pure-table td {
+	background-color: transparent;
+}
+.pure-table td, .pure-table th {
+	border-left: 1px solid #cbcbcb;
+	font-size: inherit;
+	margin: 0;
+	overflow: visible;
+	padding: .5em 1em;
+}
+
+/* form properties. */
+form {
+	padding-left: 20px;
+	width: 450px;
+}
+form ul {
+	list-style-type: none;
+}
+form li {
+	display: inline-block;
+}
+#clearScores {
+	text-align: center;
+}
+.textInputs label{
+	float: left;
+	width: 200px;
+}
+
+.textInputs input{
+	float: left;
+	width: 350px;
+}
+
+.textInputs li{
+	clear:both;
+}
+.scores li {
+	display: inline-block;
+	width: 48%;
+}
+
+
+
+
+
+#formChange {
+	float: left;
+}
+/* footer */
+footer {
+margin-top: 20px;
+font-size: 10px;
+}
+
+/* disable chrome datepicker */
+input::-webkit-calendar-picker-indicator{
+	display: none;
+}
+input[type="date"]::-webkit-input-placeholder{
+	visibility: hidden !important;
+}

@@ -1,0 +1,49 @@
+/* Fixtures (main) page */
+
+#fixtures  {
+    list-style: none;
+}
+
+#fixtures td {
+    text-align: center;
+}
+
+#fixtures li:nth-of-type(odd) {
+    background-color: #f4f4f4;
+}
+
+/* Standings page */
+
+#standings th {
+    text-align: center;
+}
+
+#standings td {
+    text-align: center;
+}
+
+#standings tr:nth-of-type(odd) {
+    background-color: #f4f4f4;
+}
+
+/* Admin page */
+
+label {
+    display: inline-block;
+    width: 5em;
+    padding-left: 10px;
+}
+
+label.narrow {
+    width: 1px;
+}
+
+input[type="number"] {
+    width: 3em;
+}
+
+.error {
+    padding-left: 10px;
+    color: red;
+}
+

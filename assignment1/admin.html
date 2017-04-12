@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Round Robin Tournament</title>
+    <meta charset=utf-8>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script  src="createAdminForm.js"></script>
+    <script  src="adminValidation.js"></script>
+
+</head>
+<body>
+<h1>Round Robin Tournament</h1>
+<div id = "menu">
+    <nav>
+        <ul>
+            <li><a href="index.html">Results</a></li>
+            <li><a href="rankingTable.html">Ranking Table</a></li>
+            <li><a class = 'active'>Admin</a></li>
+        </ul>
+    </nav>
+</div>
+<div id =main>
+    <h2>Create or Edit a Match</h2>
+<form id ="setMatch" method="GET"  class="pure-form">
+    <fieldset class="textInputs">
+        <legend>Select Match </legend>
+        <ul>
+                    <li><label for="getMatch">Match</label></li>
+                    <li><select name="getMatch" id="getMatch"><option value="test">test</option></select></li>
+                    <li><label for="matchDate">Match Date (dd/mm/yyyy)</label>
+                    <li><input type="text" name="matchDate" id="matchDate" maxlength="10"required>
+                    <li><button type='button' id='clearDate'>Clear Date</button>
+        </ul>
+    </fieldset>
+    <fieldset class="scores">
+        <legend>Enter Teams and Scores</legend>
+        <ul>
+            <li><label for="matchFor">Team for:</label><input type="text" name="matchFor" id="matchFor" required>
+            <li><label for="matchScoreFor">For Score</label><input type="text" name="matchScoreFor" id="matchScoreFor" maxlength="2" required>
+            <li><label for="matchAgainst">Team Against</label><input type="text" name="matchAgainst" id="matchAgainst" required>
+            <li><label for="matchScoreAgainst">Against Score</label><input type="text" name="matchScoreAgainst" id="matchScoreAgainst" maxlength="2" required></li>
+            <li><button type='button' id='clearScores'>Clear Scores</button>
+        </ul>
+    </fieldset>
+    <fieldset class="textInputs">
+        <legend>Select Venue</legend>
+        <ul>
+            <li><label for="matchVenue">Match Venue</label><select name="matchVenue" id="matchVenue"></select>
+        </ul>
+
+    </fieldset>
+    <button type="button" id="submitButton">Submit</button>
+</form>
+    <div id="errors"></div>
+    <button type='button' id='cancelChange'>Cancel</button><button type='button' id='comfirmChange'>Comfirm</button>
+</div>
+
+<footer>
+    <p>This website was created for a University project.</p>
+</footer>
+</body>
+</html>

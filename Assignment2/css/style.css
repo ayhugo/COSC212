@@ -1,0 +1,151 @@
+/* Fixtures (main) page */
+
+#fixtures  {
+    list-style: none;
+}
+
+#fixtures td {
+    text-align: center;
+}
+
+#fixtures li:nth-of-type(odd) {
+    background-color: #f4f4f4;
+}
+
+/* Standings page */
+
+#standings th {
+    text-align: center;
+}
+
+#standings td {
+    text-align: center;
+}
+
+#standings tr:nth-of-type(odd) {
+    background-color: #f4f4f4;
+}
+
+/* Admin page */
+
+label {
+    display: inline-block;
+    width: 5em;
+    padding-left: 10px;
+}
+
+label.narrow {
+    width: 1px;
+}
+
+input[type="number"] {
+    width: 3em;
+}
+
+.error {
+    padding-left: 10px;
+    color: red;
+}
+
+header {
+    color: #000000;
+    background-color: inherit;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+}
+/* everything to do with the body and text. */
+body {
+    background-color: #efefef;
+    color:#555555;
+    font-family: Arial, Helvetica, sans-serif;
+    width:1000px;
+    margin:100px auto;
+}
+
+h1 {
+    color: #000000;
+    background-color: inherit;
+    margin: auto;
+}
+
+h2, h3, h4 {
+    margin-left: 3px;
+}
+
+
+/* Menu bar. */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: inherit;
+    box-shadow: 0 0 5px 1px #888888;
+    width: 70%;
+    margin: auto;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    background-color: inherit;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active nav li a:hover {
+    color: inherit;
+    background-color: #ECECEC;
+}
+
+nav li a:hover {
+    color: inherit;
+    background-color: #111;
+}
+
+.active {
+    color: inherit;
+    background-color: #ECECEC;
+}
+
+
+
+/* coloring the links */
+a {
+    background-color: inherit;
+    color: inherit;
+}
+
+/* everything in the main div */
+#main {
+    color:inherit;
+    background-color:#FFFFFF;
+    box-shadow: 0 0 5px 1px #888888;
+    clear: right;
+    padding-bottom: 10px;
+    width: 70%;
+    margin:auto;
+}
+
+.select {
+    width: 130px;
+}
+
+/* footer */
+footer {
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+/* disable chrome datepicker */
+input::-webkit-calendar-picker-indicator{
+    display: none;
+}
+input[type="date"]::-webkit-input-placeholder{
+    visibility: hidden !important;
+}

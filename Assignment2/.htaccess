@@ -1,0 +1,7 @@
+
+        AuthType                basic
+        AuthBasicProvider       ldap
+        AuthName                "Please enter your departmental credentials to access this page"
+        AuthLDAPURL             ldap://abyss.otago.ac.nz/dc=otago,dc=ac,dc=nz?uid
+        require ldap-user       steven dme nickmeek hayre 
+
